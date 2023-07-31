@@ -1,0 +1,122 @@
+.header {
+  background-color: #003580;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0 100px 0;
+
+    &.headerFromList {
+        margin: 20px 0 0 0;
+    }
+
+    .headerList {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 40px;
+
+      .headerListIcon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+
+        &.active {
+          border: 1px solid #fff;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .headerDesc {
+    margin: 20px 0;
+  }
+  .headerButton {
+    background-color: #0071c2;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .headerSearch {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+    height: 50px;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .headerSearchItem {
+      color: #4b4a4a;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .headerSearchInput {
+        border: none;
+        outline: none;
+      }
+      .headerSearchText {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .date {
+        position: absolute;
+        top: 50px;
+      }
+      .headerCount {
+      }
+      .options {
+        position: absolute;
+        top: 50px;
+        background-color: #fff;
+        color: grey;
+        border-radius: 10px;
+        -webkit-box-shadow: 3px 4px 14px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 3px 4px 14px -3px rgba(0, 0, 0, 0.75);
+        box-shadow: 3px 4px 14px -3px rgba(0, 0, 0, 0.75);
+
+        .optionItem {
+            width: 12rem;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+
+            .optionCounter {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .optionCounterNumber {
+                    width: 20px;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .optionCounterButton {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border: 1px solid #0071c2;
+                    color: #0071c2;
+                    background-color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+      }
+    }
+  }
+}
