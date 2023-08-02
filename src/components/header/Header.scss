@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&family=Urbanist:wght@200;300&display=swap");
+
 .header {
   background-color: #003580;
   color: #fff;
@@ -11,7 +13,17 @@
     margin: 20px 0 100px 0;
 
     &.headerFromList {
-        margin: 20px 0 0 0;
+      margin: 20px 0 0 0;
+    }
+
+    .headerTitle {
+      font-family: "Roboto";
+      font-weight: 400;
+    }
+
+    .headerDesc {
+      font-family: "Roboto";
+      font-weight: 300;
     }
 
     .headerList {
@@ -24,6 +36,8 @@
         align-items: center;
         gap: 10px;
         cursor: pointer;
+        font-family: "Roboto";
+        font-weight: 300;
 
         &.active {
           border: 1px solid #fff;
@@ -76,8 +90,8 @@
       .date {
         position: absolute;
         top: 50px;
-      }
-      .headerCount {
+        z-index: 2;
+        border: 2px solid #003580;
       }
       .options {
         position: absolute;
@@ -88,33 +102,34 @@
         -webkit-box-shadow: 3px 4px 14px -3px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 3px 4px 14px -3px rgba(0, 0, 0, 0.75);
         box-shadow: 3px 4px 14px -3px rgba(0, 0, 0, 0.75);
+        z-index: 2;
 
         .optionItem {
-            width: 12rem;
+          width: 12rem;
+          display: flex;
+          justify-content: space-between;
+          margin: 10px;
+
+          .optionCounter {
             display: flex;
-            justify-content: space-between;
-            margin: 10px;
+            align-items: center;
+            gap: 20px;
 
-            .optionCounter {
-                display: flex;
-                align-items: center;
-                gap: 20px;
-
-                .optionCounterNumber {
-                    width: 20px;
-                    display: flex;
-                    justify-content: center;
-                }
-
-                .optionCounterButton {
-                    width: 1.5rem;
-                    height: 1.5rem;
-                    border: 1px solid #0071c2;
-                    color: #0071c2;
-                    background-color: #fff;
-                    cursor: pointer;
-                }
+            .optionCounterNumber {
+              width: 20px;
+              display: flex;
+              justify-content: center;
             }
+
+            .optionCounterButton {
+              width: 1.5rem;
+              height: 1.5rem;
+              border: 1px solid #0071c2;
+              color: #0071c2;
+              background-color: #fff;
+              cursor: pointer;
+            }
+          }
         }
       }
     }

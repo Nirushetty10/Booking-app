@@ -1,0 +1,29 @@
+.footer {
+    width: 100%;
+    max-width: 1024px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 2rem    ;
+
+    .footerWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .fList {
+            list-style: none;
+
+            li {
+                margin: 5px 0;
+                font-size: 0.9rem;
+                color: #006CE4;
+                cursor: pointer;
+            }
+        }
+    }
+    .footerCopyRights {
+        font-size: 0.85rem;
+    }
+}
