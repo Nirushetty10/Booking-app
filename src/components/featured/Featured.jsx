@@ -14,7 +14,7 @@ const data = [
     stats : "42 properties"
   },
   {
-    id : 1,
+    id : 3,
     image : "https://g9projects.com/assets/img/misc/mysuru.jpg",
     location : "Mysore",
     stats : "65 properties"

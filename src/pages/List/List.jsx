@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../../components/header/Header';
 import NavBar from '../../components/navbar/NavBar';
 import SearchContainer from '../../components/seachContainer/SearchContainer';
 import "./List.scss";
+import { useLocation } from 'react-router-dom';
 
 const List = () => {
+  const location = useLocation();
+
+
   return (
     <div>
       <NavBar />
@@ -12,7 +16,7 @@ const List = () => {
       <div className="listContainer">
         <div className="listWrapper">
           <div className="searchBox">
-              <SearchContainer />
+              <SearchContainer location={location} />
           </div>
           <div className="searchResult">
             hii
